@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>박진국</title>
+
+    <style>
+
+        @font-face {
+            font-family: 'PretendardStd';
+            src: url('/PretendardStd-Light.otf');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* http://meyerweb.com/eric/tools/css/reset/
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+
+            font-family: 'PretendardStd';
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        div, header, section {
+            display: flex;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+    </style>
+    <style>
+
+        header {
+            margin-top: 16px;
+            flex-flow: row;
+            gap: 12px;
+            align-items: end;
+            font-weight: bold;
+        }
+
+        header p {
+            color: gray;
+        }
+
+        section {
+            flex-flow: column;
+            margin-top: 48px;
+        }
+
+        .row {
+            flex-flow: row;
+        }
+        .col {
+            flex-flow: column;
+        }
+
+        .skills {
+            padding-top: 12px;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .skill {
+            align-items: center;
+            gap: 4px;
+        }
+
+        .skill img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .careers li,
+        .graduations li,
+        .licenses li {
+            margin-top: 20px;
+        }
+
+        .careers li div,
+        .graduations li div,
+        .licenses li div {
+            gap: 4px;
+        }
+
+
+        #timeline {
+            width: 960px;
+            height: 550px;
+            border: 1px solid black;
+        }
+
+        .timelines p {
+            position: absolute;
+        }
+    </style>
+
+</head>
+<body style="width: 100%" onload="init()">
+
+<div style="margin: auto; padding: 20px 32px; flex-flow: column">
+
+    <header>
+        <h2>Jinguk Park</h2>
+        <p>Full Stack Developer</p>
+    </header>
+
+    <section>
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <h3>Languages |</h3>
+
+            <div class="skill">
+                <img src="/skills/java.png" alt="">
+                <h4>Java</h4>
+            </div>
+            <div class="skill">
+                <img src="/skills/kotlin.png" alt="">
+                <h4>Kotlin</h4>
+            </div>
+            <div class="skill">
+                <img src="/skills/node.png" alt="">
+                <h4>Node.js</h4>
+            </div>
+            <div class="skill">
+                <img src="/skills/typescript.png" alt="">
+                <h4>TypeScript</h4>
+            </div>
+            <div class="skill">
+                <img src="/skills/php.png" alt="">
+                <h4>PHP</h4>
+            </div>
+        </div>
+        <div class="skills">
+            <h3>Frameworks |</h3>
+
+            <div class="skill">
+                <img src="/skills/springboot.png" alt="">
+                <h4>Spring Boot</h4>
+            </div>
+            <div class="skill">
+                <img src="/skills/laravel.png" alt="">
+                <h4>Laravel</h4>
+            </div>
+            <div class="skill">
+                <img src="/skills/node.png" alt="">
+                <h4>Express.js</h4>
+            </div>
+        </div>
+        <div class="skills">
+            <h3>DBs |</h3>
+
+            <div class="skill">
+                <img src="/skills/mysql.png" alt="">
+                <h4>MySQL</h4>
+            </div>
+            <div class="skill">
+                <img src="/skills/oracle.png" alt="">
+                <h4>Oracle</h4>
+            </div>
+            <div class="skill">
+                <img src="/skills/postgres.png" alt="">
+                <h4>PostgresQL</h4>
+            </div>
+
+        </div>
+        <div class="skills">
+            <h3>ETCs |</h3>
+
+            <div class="skill">
+                <img src="/skills/git.png" alt="">
+                <h4>Git</h4>
+            </div>
+            <div class="skill">
+                <img src="/skills/rabbitmq.png" alt="">
+                <h4>RabbitMQ</h4>
+            </div>
+            <div class="skill">
+                <img src="/skills/docker.png" alt="">
+                <h4>Docker</h4>
+            </div>
+            <div class="skill">
+                <img src="/skills/kubernetes.png" alt="">
+                <h4>Kubernetes</h4>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <div id="timeline">
+            <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1C0F3md0mAPPHYSGQFp0U1aYExTAADeHYq0uUgftZvpI&font=Default&lang=en&initial_zoom=2&start_at_slide=2&height=550' width='100%' height='550' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+        </div>
+    </section>
+
+    <section class="row" style="gap: 32px">
+        <div class="col">
+            <h2>Careers</h2>
+
+            <ul class="careers" style="list-style: disc; padding-left: 20px; padding-top: 12px;">
+                <li>
+                    <div>
+                        <h4>1인 창업 프로젝트</h4>
+                        <p style="font-size: 14px; color: gray">2023.02 ~ </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h4>엑스이허브(주)</h4>
+                        <p style="font-size: 14px; color: gray">2022.01 ~ 2023.02</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h4>(주) 마켓잇</h4>
+                        <p style="font-size: 14px; color: gray">2021.08 ~ 2021.12</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h4>(주) 데이터플로</h4>
+                        <p style="font-size: 14px; color: gray">2019.04 ~ 2021.08</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="col">
+            <h2>Graduations</h2>
+
+            <ul class="graduations" style="list-style: disc; padding-left: 20px; padding-top: 12px;">
+                <li>
+                    <div>
+                        <h4>동양미래대학교</h4>
+                        <p style="font-size: 14px; color: gray">컴퓨터소프트웨어공학과</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h4>한양공업고등학교</h4>
+                        <p style="font-size: 14px; color: gray">컴퓨터네트워크과</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col">
+            <h2>Licenses</h2>
+
+            <ul class="licenses" style="list-style: disc; padding-left: 20px; padding-top: 12px;">
+                <li>
+                    <div>
+                        <h4>정보처리기사</h4>
+                        <p style="font-size: 14px; color: gray">한국산업인력공단</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h4>정보처리기능사</h4>
+                        <p style="font-size: 14px; color: gray">한국산업인력공단</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h4>정보기기운용기능사</h4>
+                        <p style="font-size: 14px; color: gray">한국산업인력공단</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
