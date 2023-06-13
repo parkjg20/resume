@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'PretendardStd';
+    src: url('/PretendardStd-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+    font-family: 'PretendardStd';
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+div, header, section {
+    display: flex;
+}
+
+h1, h2, h3, h4 {
+    display: flex;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+
+header {
+    flex-flow:column;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+header div{
+    flex-flow: row;
+    gap: 12px;
+    align-items: end;
+}
+
+header p {
+    color: gray;
+}
+
+section {
+    flex-flow: column;
+    margin-top: 48px;
+}
+
+.row {
+    flex-flow: row;
+}
+.col {
+    flex-flow: column;
+}
+
+bold {
+    font-weight: bold;
+}
+
+.sns {
+    padding-top: 16px;
+}
+
+.sns img {
+    widtH: 24px;
+    height: 24px;
+}
+
+.contacts {
+    gap: 6px;
+}
+
+.skills {
+    padding-top: 12px;
+    align-items: center;
+    gap: 16px;
+}
+
+.skills h3 {
+    min-width: 120px;
+}
+
+.skill {
+    align-items: center;
+    gap: 4px;
+}
+
+.skill img {
+    width: 28px;
+    height: 28px;
+}
+.skill.small img {
+    width: 26px;
+    height: 26px;
+}
+
+h2 {
+    align-items: center;
+    gap: 6px;
+}
+
+h2 img {
+    width: 40px;
+    height: 40px
+}
+
+.careers,
+.graduations,
+.projects,
+.licenses {
+    list-style: disc; padding-left: 20px; padding-top: 12px;
+}
+
+.careers li,
+.graduations li,
+.projects li,
+.licenses li {
+    margin-top: 20px;
+}
+
+.careers li div,
+.graduations li div,
+.projects li div,
+.licenses li div {
+    gap: 4px;
+}
+
+
+#timeline {
+    width: 960px;
+    height: 550px;
+    border: 1px solid black;
+}
+
+.timelines p {
+    position: absolute;
+}
+
+.projects .skill{
+    margin-top: 12px;
+    gap: 6px;
+}
+
+.projects .description {
+    padding-top: 16px;
+    flex-flow: column;
+}
+
+.projects .description > div {
+    margin-top: 16px;
+    flex-flow: inherit;
+}
