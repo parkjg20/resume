@@ -189,6 +189,13 @@ h2 img {
     gap: 4px;
 }
 
+.title {
+    align-items: end;
+}
+
+.title p {
+    font-size: 14px; color: gray
+}
 
 #timeline {
     width: 960px;
@@ -198,6 +205,11 @@ h2 img {
 
 .timelines p {
     position: absolute;
+}
+
+.projects li > div:last-child {
+    border-bottom: 1px dashed gray;
+    padding-bottom: 12px;
 }
 
 .projects .skill{
@@ -214,3 +226,4 @@ h2 img {
     margin-top: 16px;
     flex-flow: inherit;
 }
+
