@@ -13,4 +13,8 @@ router.get('/', (req, res) => {
     res.render('index.html')
 })
 
+router.get('/neogurinest/privacy', (req, res) => {
+    res.render('neogurinest/privacy.html')
+})
+
 app.listen(80)
