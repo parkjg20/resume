@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>portfolio</title>
+<style>
+:root { --accent:#2d6cdf; --ink:#1f2328; --muted:#6b7280; --line:#e5e7eb; }
+* { box-sizing: border-box; }
+body {
+  font-family: 'Pretendard','Malgun Gothic','Apple SD Gothic Neo',-apple-system,sans-serif;
+  color: var(--ink); line-height: 1.65; max-width: 820px; margin: 0 auto;
+  padding: 48px 40px; font-size: 14.5px; word-break: keep-all;
+}
+h1 { font-size: 26px; margin: 0 0 4px; padding-bottom: 10px; border-bottom: 2px solid var(--ink); }
+h1 + p { font-size: 16px; color: var(--accent); font-weight: 700; margin: 12px 0 4px; }
+h1 + p + blockquote { margin-top: 6px; }
+h2 { font-size: 18px; margin: 30px 0 10px; padding-bottom: 5px; border-bottom: 1px solid var(--line); color: var(--accent); }
+h3 { font-size: 15.5px; margin: 18px 0 6px; }
+h4 { font-size: 14px; margin: 14px 0 4px; color: var(--ink); border-left: 3px solid var(--accent); padding-left: 8px; }
+p { margin: 8px 0; }
+ul { margin: 6px 0; padding-left: 20px; }
+li { margin: 3px 0; }
+li > ul { margin: 3px 0; }
+strong { font-weight: 700; }
+blockquote {
+  margin: 8px 0; padding: 8px 14px; border-left: 3px solid var(--line);
+  color: var(--muted); font-size: 13px; background: #f9fafb;
+}
+a { color: var(--accent); text-decoration: none; word-break: break-all; }
+code { background: #f3f4f6; padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+hr { border: none; border-top: 1px solid var(--line); margin: 20px 0; }
+table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 13px; }
+th, td { border: 1px solid var(--line); padding: 6px 9px; text-align: left; }
+th { background: #f3f4f6; }
+@media print {
+  body { padding: 0; max-width: none; font-size: 11pt; }
+  @page { size: A4; margin: 16mm; }
+  h2, h3 { break-after: avoid; }
+  li, blockquote, h1, h2, h3 { break-inside: avoid; }
+  a { color: var(--ink); }
+}
+</style>
+</head>
+<body>
+<h1>박진국 포트폴리오</h1>
+<blockquote>
+<p>백엔드 개발자(전문연구요원) 지원용. 대표 프로젝트 요약과 산출물 링크.
+상세 기술 내역은 경력기술서(career-description.md) 참고.</p>
+</blockquote>
+<h2>링크</h2>
+<ul>
+<li><strong>이력서(웹)</strong>: <a href="https://parkjg20.github.io/resume/">https://parkjg20.github.io/resume/</a></li>
+<li><strong>포트폴리오(웹)</strong>: <a href="https://parkjg20.github.io/resume/">https://parkjg20.github.io/resume/</a></li>
+<li><strong>GitHub</strong>: <a href="http://github.com/parkjg20">http://github.com/parkjg20</a></li>
+</ul>
+<h2>대표 프로젝트</h2>
+<h3>1. ProblemShorts — 과학 숏폼 학습 플랫폼 (2024.11 ~ 재직중)</h3>
+<blockquote>
+<p>기획·아키텍처·백엔드·인프라·운영 전 분야를 외부 도움 없이 단독 주도한 첫 프로젝트.</p>
+</blockquote>
+<ul>
+<li><strong>역할</strong>: 단독 기획·설계·개발, 팀 리딩(4인 → 6인)</li>
+<li><strong>스택</strong>: Spring Boot, PostgreSQL, Redis, AWS(ECS, RDS, S3, CloudFront, MediaConvert, CloudWatch), Next.js</li>
+<li><strong>핵심 성과</strong>:<ul>
+<li>AI 적재 파이프라인: 1,000문제 수작업 80시간 → 20분 자동화, 1.3만 문제 2주 적재</li>
+<li>결제: 토스페이먼츠 일반·정기결제 + 구글·애플 인앱결제 직접 연동</li>
+<li>확장 설계: 동시 접속 1,000명 목표 ECS Auto Scaling·RDS Read Replica</li>
+<li>테스트 1,000개 이상 + 커스텀 어노테이션(LenientMockitoExtension)으로 빌드 3분 유지</li>
+<li><strong>특허</strong>: 플랫폼 핵심 시스템에 대해 「숏폼 학습 플랫폼 시스템」 특허 등록(발명자) — 상세는 아래 &quot;특허&quot; 참고</li>
+</ul>
+</li>
+</ul>
+<h3>2. SANDI(샌디) — 라이프케어 솔루션 리뉴얼 (투스카이, 2023.06 ~ 2024.10)</h3>
+<blockquote>
+<p>총 회원 10만·MAU 2.8만 규모 서비스의 리뉴얼 구축·운영.</p>
+</blockquote>
+<ul>
+<li><strong>역할</strong>: 백엔드 개발(Spring Boot), Android 앱 개발</li>
+<li><strong>핵심 성과</strong>:<ul>
+<li>MSA 구조에서 회원 정보 조회 쿼리 인덱싱 최적화(100건 이상)</li>
+<li>비상대피 시스템 부하 대응: 동시 접속 2만 명 가정 부하테스트 시나리오 설계 + 인프라 협업 Scale-out 최적화</li>
+<li>8.5만 회원 데이터 마이그레이션, 7개 이상 외부 시스템 연계(Open API, SOAP), ISMS 인증</li>
+</ul>
+</li>
+</ul>
+<h3>3. 가격의 신 — 입점형 쇼핑몰 (데이터플로, 2020.11 ~ 2021.08)</h3>
+<ul>
+<li><strong>역할</strong>: 풀스택 개발, DB 모델링, CI/CD 구축</li>
+<li><strong>핵심 성과</strong>: 약 36개 입점사 선/후지급 정산 타입별 수수료율 + 포인트·쿠폰 매출 보정 집계 처리 구현 (월 거래액 최대 4천만 원 규모)</li>
+</ul>
+<h3>그 외</h3>
+<ul>
+<li>박매니저(공유 미용실 플랫폼) — Clean Architecture·UseCase 패턴 도입, 코드 중복 50%↓ (엑스이허브)</li>
+<li>전자명함 서비스(한화생명 등), 마켓잇 인플루언서 카드 API, ARA360 3D 촬영 솔루션 등</li>
+</ul>
+<h2>연구 실적 (논문)</h2>
+<ul>
+<li><strong>「LLM 기반 맞춤형 청소년 진학 상담 챗봇 시스템 설계에 관한 연구」</strong> — 박진국(제1저자), 윤수연 / 한국통신학회 2025 동계종합학술발표회<ul>
+<li>KoGPT에 DAPT·QLoRA 적용, 유효 응답률 60% → 71.25% 개선</li>
+</ul>
+</li>
+<li><strong>「BERT 기반 모델에서의 부정적 감정 식별을 위한 감성 대화 분석 기법에 관한 연구」</strong> — 박진국(제1저자), 윤수연 / 한국통신학회 2025 하계종합학술발표회</li>
+</ul>
+<h2>특허</h2>
+<ul>
+<li><strong>「숏폼 학습 플랫폼 시스템」</strong> — 발명자(공동) / 출원인·권리자: 아카소프트(주)<ul>
+<li>출원번호 <strong>10-2025-0175283</strong> · 특허결정 2026.05.28 · <strong>특허 등록 완료</strong>(등록증 발급)</li>
+<li>ProblemShorts 플랫폼의 핵심 시스템에 대한 발명. 직무발명으로 권리자는 법인(아카소프트), 박진국은 발명자로 등재.</li>
+</ul>
+</li>
+</ul>
+
+</body>
+</html>

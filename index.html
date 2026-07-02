@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>박진국 — 백엔드 개발자</title>
+<style>
+:root { --accent:#2d6cdf; --ink:#1f2328; --muted:#6b7280; --line:#e5e7eb; }
+* { box-sizing: border-box; }
+body {
+  font-family: 'Pretendard','Malgun Gothic','Apple SD Gothic Neo',-apple-system,sans-serif;
+  color: var(--ink); line-height: 1.65; max-width: 820px; margin: 0 auto;
+  padding: 56px 40px; font-size: 14.5px; word-break: keep-all;
+}
+header { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+.photo {
+  width: 132px; height: 170px; object-fit: cover; border-radius: 10px;
+  border: 1px solid var(--line); flex-shrink: 0;
+}
+.intro { flex: 1; min-width: 240px; }
+h1 { font-size: 28px; margin: 0 0 6px; }
+.role { font-size: 15px; color: var(--ink); font-weight: 600; margin: 0 0 8px; }
+.tagline { font-size: 15px; color: var(--accent); font-weight: 700; margin: 0 0 10px; }
+.gh { font-size: 13.5px; }
+.gh a { color: var(--accent); text-decoration: none; }
+h2 {
+  font-size: 17px; margin: 32px 0 10px; padding-bottom: 5px;
+  border-bottom: 1px solid var(--line); color: var(--accent);
+}
+p { margin: 8px 0; }
+ul { margin: 6px 0; padding-left: 20px; }
+li { margin: 4px 0; }
+.skills b { display: inline-block; min-width: 96px; color: var(--ink); }
+.timeline li { list-style: none; margin: 8px 0; }
+.timeline li .p { color: var(--muted); font-size: 12.5px; }
+.timeline { padding-left: 0; }
+.cards { display: grid; gap: 12px; grid-template-columns: 1fr 1fr; margin: 14px 0 4px; }
+@media (max-width: 560px){ .cards { grid-template-columns: 1fr; } }
+a.card {
+  display: block; text-decoration: none; color: inherit;
+  border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px;
+  transition: border-color .15s, box-shadow .15s;
+}
+a.card:hover { border-color: var(--accent); box-shadow: 0 2px 10px rgba(45,108,223,.08); }
+a.card .t { font-size: 15px; font-weight: 700; color: var(--accent); }
+a.card .d { font-size: 12.5px; color: var(--muted); margin-top: 4px; }
+footer { margin-top: 36px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <img class="photo" src="./profile.png" alt="박진국 프로필 사진">
+  <div class="intro">
+    <h1>박진국</h1>
+    <p class="role">백엔드 개발자 · 7년차 · 전문연구요원(병역특례) 지원</p>
+    <p class="tagline">"'시킨 일'이 아니라 '풀어야 할 문제'를 먼저 보는 개발자"</p>
+    <p class="gh"><a href="http://github.com/parkjg20" target="_blank" rel="noopener">github.com/parkjg20</a></p>
+  </div>
+</header>
+
+<h2>소개</h2>
+<p>
+2019년부터 Java를 주력으로 웹·앱 개발을 시작해, 점차 웹 백엔드로 분야를 좁히며 전문성을 높여온 7년차 개발자입니다. 같은 기간 학업을 병행해 컴퓨터공학 학사를 취득하고, 국민대학교 인공지능전공 석사 과정을 마무리하고 있습니다(2026.02 졸업). Gemini·Grok 등 LLM과 이미지 생성 AI를 데이터 적재·콘텐츠 생성 파이프라인에 직접 연동·운영하는 'AI를 다룰 줄 아는 백엔드 개발자'입니다.
+</p>
+
+<h2>저는 이렇게 일합니다</h2>
+<ul>
+  <li>변화를 두려워하지 않고, 빠른 습득력으로 좋은 결과물을 만듭니다. 새로운 기술을 도입할 때는 서비스에 미칠 영향도를 철저히 분석합니다.</li>
+  <li>다른 직군이나 메타지식의 차이가 있는 동료와도 명확하고 솔직하게 소통하고, 문제 상황과 처리 계획을 투명하게 공유합니다.</li>
+  <li>업무의 본질적 필요성을 먼저 고민하고 개선안을 제시해, 더 나은 결과물을 도출하는 데서 보람을 느낍니다.</li>
+</ul>
+
+<h2>보유 기술 <span style="font-size:12px;color:var(--muted);font-weight:400;">(능숙한 순)</span></h2>
+<ul class="skills">
+  <li><b>Backend</b> Spring Boot (Java / Kotlin, Spring Security, Spring Data JPA), Express.js / Nest.js (TypeScript)</li>
+  <li><b>Infra</b> AWS (ECS, RDS, S3, CloudFront, CloudWatch, CloudFormation), Docker / Kubernetes, CI/CD</li>
+  <li><b>Architecture</b> Domain Driven Design, Hexagonal, Design Patterns, Mockist Tests, RESTful API</li>
+  <li><b>Database</b> PostgreSQL, MySQL, Redis</li>
+</ul>
+
+<h2>경력</h2>
+<ul class="timeline">
+  <li><b>아카소프트(주)</b> — 이사 / 연구소장 / 백엔드 실무 <span class="p">· 2025.06 ~ 재직중</span><br>과학 숏폼 학습 플랫폼 'ProblemShorts' 백엔드 설계·개발 및 운영 주도, AI 문제 적재 자동화 설계</li>
+  <li><b>아카교육</b> — 개발 PM / 프리랜서 <span class="p">· 2024.11 ~ 2025.05</span><br>'ProblemShorts' 기획·아키텍처·구축 (Spring Boot, Next.js, AWS)</li>
+  <li><b>(주)투스카이</b> — BE 아키텍트 1팀 선임 / 백엔드 <span class="p">· 2023.06 ~ 2024.10</span><br>총 회원 10만·MAU 2.8만 라이프케어 서비스 'SANDI' 리뉴얼·운영</li>
+  <li><b>엑스이허브(주)</b> — R&D 개발팀 대리 / 풀스택 <span class="p">· 2022.01 ~ 2023.02</span></li>
+  <li><b>(주)마켓잇</b> — 개발실 매니저 / 백엔드 <span class="p">· 2021.08 ~ 2021.12</span></li>
+  <li><b>(주)데이터플로</b> — 개발팀 대리 / 웹 풀스택 <span class="p">· 2019.07 ~ 2021.08</span></li>
+</ul>
+
+<h2>학력 · 연구</h2>
+<ul>
+  <li>국민대학교 소프트웨어융합대학원 인공지능전공 석사 (2024.09 ~ 2026.02)</li>
+  <li>독학학위제 컴퓨터공학과 학사</li>
+  <li>제1저자 논문 2편 — 한국통신학회 2025 (LLM 기반 진학 상담 챗봇 / BERT 기반 감성 대화 분석)</li>
+</ul>
+
+<h2>상세 문서</h2>
+<div class="cards">
+  <a class="card" href="./portfolio.html">
+    <div class="t">포트폴리오 →</div>
+    <div class="d">대표 프로젝트(ProblemShorts · SANDI · 가격의신)와 핵심 성과</div>
+  </a>
+  <a class="card" href="./career-description.html">
+    <div class="t">경력기술서 →</div>
+    <div class="d">프로젝트별 상세 기술 내역(아키텍처 · 인프라 · AI 파이프라인 · 운영)</div>
+  </a>
+</div>
+
+<footer>
+  본 페이지는 검색엔진·봇에 노출되지 않도록 설정되어 있습니다(noindex).
+</footer>
+</body>
+</html>
